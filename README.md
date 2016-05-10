@@ -1,6 +1,7 @@
 # nodejs-alpine-buildtools-gm
 
-A Docker Image based on [mhart/alpine-node](https://hub.docker.com/r/mhart/alpine-node/) and [erdii/nodejs-alpine-buildtools](https://github.com/erdii/nodejs-alpine-buildtools) - this is just for the convenience of not having to install the buildtools on every Sub-Image-Build plus an installed imagemagick and graphicsmagick.
+A Docker Image based on [mhart/alpine-node](https://hub.docker.com/r/mhart/alpine-node/) and [erdii/nodejs-alpine-buildtools](https://github.com/erdii/nodejs-alpine-buildtools) - this is just for the convenience of not having to install the buildtools on every Sub-Image-Build plus an installed graphicsmagick.
+The compile code is lent by [rafakato/alpine-node-media](https://hub.docker.com/r/rafakato/alpine-node-media/).
 
 **For available versions head over to the [Tags](Tags/) Page.**
 
