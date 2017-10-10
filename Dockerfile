@@ -1,4 +1,4 @@
-FROM mhart/alpine-node:4.6
+FROM node:4.8-alpine
 MAINTAINER mpneuried
 
 # build tools for native dependencies
@@ -6,7 +6,7 @@ RUN apk add --update make gcc g++ python git
 
 # install graphicsmagick from source because install via apk not working
 ENV PKGNAME=graphicsmagick
-ENV PKGVER=1.3.25
+ENV PKGVER=1.3.26
 ENV PKGSOURCE=http://downloads.sourceforge.net/$PKGNAME/$PKGNAME/$PKGVER/GraphicsMagick-$PKGVER.tar.lz
 
 # Installing graphicsmagick dependencies
