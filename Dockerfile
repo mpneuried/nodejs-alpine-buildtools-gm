@@ -1,4 +1,4 @@
-FROM node:4.8-alpine
+FROM node:8.7-alpine
 MAINTAINER mpneuried
 
 # build tools for native dependencies
