@@ -10,13 +10,14 @@ ENV PKGVER=1.3.35
 ENV PKGSOURCE=http://downloads.sourceforge.net/$PKGNAME/$PKGNAME/$PKGVER/GraphicsMagick-$PKGVER.tar.lz
 
 # Installing graphicsmagick dependencies
-RUN apk add --update lzip \
-                     wget \
-                     ffmpeg \
-                     libjpeg-turbo-dev \
-                     libpng-dev \
-                     libtool \
-                     libgomp && \
+RUN apk add --update \
+          lzip \
+          wget \
+          ffmpeg \
+          libjpeg-turbo-dev \
+          libpng-dev \
+          libtool \
+          libgomp && \
     wget $PKGSOURCE && \
     lzip -d -c GraphicsMagick-$PKGVER.tar.lz | tar -xvf - && \
     cd GraphicsMagick-$PKGVER && \
